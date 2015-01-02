@@ -13,7 +13,7 @@ module.exports = function(source) {
     // This is a bit hacky and https://github.com/webpack/webpack/issues/655 has been filed
     // to see if we can get a more formal API.
     if (!this.request) {
-      return source;
+        return source;
     }
 
     var instrumenter = new istanbul.Instrumenter({
